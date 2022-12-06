@@ -100,6 +100,12 @@ while flag:
     if ball.distance(box10) < 50 and ball.ycor() > 150:
         box10.venis()
         ball.bounce_y()
+        
+    if ball.ycor() < -230:
+        ball.reset()
+    if ball.ycor()>200:
+        ball.bounce_x()
+        
 
 
 screen.exitonclick()
