@@ -55,6 +55,8 @@ while flag:
     time.sleep(0.1)
     screen.update()
     ball.movo()
+    if life==0:
+        flag=False
     if ball.xcor() > 230 or ball.xcor() < -230:
         ball.bounce_y()
 
