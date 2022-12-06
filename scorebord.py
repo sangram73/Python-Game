@@ -18,8 +18,8 @@ class Score(Turtle):
         self.forward(23)
         self.penup()
         self.setheading(0)
-        self.goto(0,233)
-        self.color("Crimson")
+        self.goto(0,223)
+        self.color("crimson")
         self.write(f"YOU HAVE {self.score} LIFE",align="center", font=FONT)
         self.hideturtle()
         
