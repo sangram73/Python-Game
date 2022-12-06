@@ -53,7 +53,8 @@ while flag:
     if ball.xcor() > 230 or ball.xcor() < -230:
         ball.bounce_y()
         
-    if ball.distance(paddle) > 50 or ball.ycor() > -220:
+    if ball.distance(paddle) < 50 and ball.ycor() > -220:
         ball.bounce_x()
+    
 
 screen.exitonclick()
