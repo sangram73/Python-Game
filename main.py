@@ -2,6 +2,7 @@ from turtle import Turtle, Screen
 import time
 from box import Box
 from padall import Paddle
+from ball import Ball
 
 
 t = Turtle()
@@ -39,16 +40,17 @@ box10 = Box(position10)
 paddle = Paddle()
 screen.listen()
 if paddle.xcor() < 230 or paddle.xcor() > -230:
-   screen.onkey(paddle.Right,"Right")
-   screen.onkey(paddle.Left,"Left")
-   
+    screen.onkey(paddle.Right, "Right")
+    screen.onkey(paddle.Left, "Left")
 
-
+ball = Ball()
 flag = True
 # for screen get update in every faction of sec
 while flag:
     time.sleep(0.1)
     screen.update()
+    ball.movo()
+    
 
 
 screen.exitonclick()
