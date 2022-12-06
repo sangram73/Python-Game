@@ -55,8 +55,8 @@ while flag:
     time.sleep(0.1)
     screen.update()
     ball.movo()
-    if life==0:
-        flag=False
+    if life == 0:
+        flag = False
     if ball.xcor() > 230 or ball.xcor() < -230:
         ball.bounce_y()
 
@@ -66,49 +66,62 @@ while flag:
     if ball.distance(box) < 50 and ball.ycor() > 150:
         box.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box2) < 50 and ball.ycor() > 150:
         box2.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box3) < 50 and ball.ycor() > 150:
         box3.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box4) < 50 and ball.ycor() > 150:
         box4.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box5) < 50 and ball.ycor() > 150:
         box5.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box6) < 50 and ball.ycor() > 150:
         box6.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box7) < 50 and ball.ycor() > 150:
         box7.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box8) < 50 and ball.ycor() > 150:
         box8.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box9) < 50 and ball.ycor() > 150:
         box9.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.distance(box10) < 50 and ball.ycor() > 150:
         box10.venis()
         ball.bounce_y()
+        win += 1
 
     if ball.ycor() < -230:
         ball.reset()
         score.life_decrise()
+        
     if ball.ycor() > 200:
         ball.bounce_x()
+        
     if win == 10:
-        flag=False
+        score.win()
+        flag = False
 
 screen.exitonclick()
