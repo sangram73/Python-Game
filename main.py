@@ -36,6 +36,11 @@ box9 = Box(position9)
 box10 = Box(position10)
 
 paddle = Paddle()
+screen.listen()
+if paddle.xcor() < 230 or paddle.xcor() > -230:
+   screen.onkey(paddle.Right,"Right")
+   screen.onkey(paddle.Left,"Left")
+   
 
 
 flag = True
