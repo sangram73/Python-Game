@@ -103,6 +103,7 @@ while flag:
         
     if ball.ycor() < -230:
         ball.reset()
+        score.life_decrise()
     if ball.ycor()>200:
         ball.bounce_x()
         
