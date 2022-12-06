@@ -3,9 +3,12 @@ import time
 from box import Box
 from padall import Paddle
 from ball import Ball
+from scorebord import Score
 
 
 t = Turtle()
+life = 3
+win = 0
 
 # position for box are placed
 position1 = (180, 200)
@@ -37,6 +40,8 @@ box8 = Box(position8)
 box9 = Box(position9)
 box10 = Box(position10)
 
+score = Score(life)
+
 paddle = Paddle()
 screen.listen()
 if paddle.xcor() < 230 or paddle.xcor() > -230:
@@ -55,7 +60,7 @@ while flag:
 
     if ball.distance(paddle) < 50 and ball.ycor() > -220:
         ball.bounce_x()
-        
+
     if ball.distance(box) < 50 and ball.ycor() > 150:
         box.venis()
         ball.bounce_y()
@@ -67,15 +72,15 @@ while flag:
     if ball.distance(box3) < 50 and ball.ycor() > 150:
         box3.venis()
         ball.bounce_y()
-        
+
     if ball.distance(box4) < 50 and ball.ycor() > 150:
         box4.venis()
         ball.bounce_y()
-        
+
     if ball.distance(box5) < 50 and ball.ycor() > 150:
         box5.venis()
         ball.bounce_y()
-        
+
     if ball.distance(box6) < 50 and ball.ycor() > 150:
         box6.venis()
         ball.bounce_y()
@@ -83,7 +88,7 @@ while flag:
     if ball.distance(box7) < 50 and ball.ycor() > 150:
         box7.venis()
         ball.bounce_y()
-        
+
     if ball.distance(box8) < 50 and ball.ycor() > 150:
         box8.venis()
         ball.bounce_y()
@@ -91,7 +96,7 @@ while flag:
     if ball.distance(box9) < 50 and ball.ycor() > 150:
         box9.venis()
         ball.bounce_y()
-        
+
     if ball.distance(box10) < 50 and ball.ycor() > 150:
         box10.venis()
         ball.bounce_y()
