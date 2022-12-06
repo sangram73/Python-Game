@@ -17,26 +17,28 @@ position9 = (-90, 140)
 position10 = (-180, 140)
 
 screen = Screen()
+t.hideturtle()
 screen.setup(500, 500)
 screen.title("Bubble shooter game")
 # it will turn off the animation
 screen.tracer(0)
 
-box =Box(position1)
-box =Box(position2)
-box =Box(position3)
-box =Box(position4)
-box =Box(position5)
-box =Box(position6)
-box =Box(position7)
-box =Box(position8)
-box =Box(position9)
-box =Box(position10)
+box = Box(position1)
+box2 = Box(position2)
+box3 = Box(position3)
+box4 = Box(position4)
+box5 = Box(position5)
+box6 = Box(position6)
+box7 = Box(position7)
+box8 = Box(position8)
+box9 = Box(position9)
+box10 = Box(position10)
 
-
-
-
-
+flag = True
+# for screen get update in every faction of sec
+while flag:
+    time.sleep(0.1)
+    screen.update()
 
 
 screen.exitonclick()
