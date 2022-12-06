@@ -42,5 +42,9 @@ class Score(Turtle):
         self.forward(500)
         self.left(90)
         self.forward(23)
+    def game_over(self):
+        self.pencolor("Deepink")
+        self.goto(0,0)
+        self.write("you lose the game ",align="center",font=FONT)
                 
         
