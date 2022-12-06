@@ -61,39 +61,39 @@ while flag:
         ball.bounce_y()
 
     if ball.distance(box2) < 50 and ball.ycor() > 150:
-        box.venis()
+        box2.venis()
         ball.bounce_y()
 
     if ball.distance(box3) < 50 and ball.ycor() > 150:
-        box.venis()
+        box3.venis()
         ball.bounce_y()
         
     if ball.distance(box4) < 50 and ball.ycor() > 150:
-        box.venis()
+        box4.venis()
         ball.bounce_y()
         
     if ball.distance(box5) < 50 and ball.ycor() > 150:
-        box.venis()
+        box5.venis()
         ball.bounce_y()
         
     if ball.distance(box6) < 50 and ball.ycor() > 150:
-        box.venis()
+        box6.venis()
         ball.bounce_y()
 
     if ball.distance(box7) < 50 and ball.ycor() > 150:
-        box.venis()
+        box7.venis()
         ball.bounce_y()
         
     if ball.distance(box8) < 50 and ball.ycor() > 150:
-        box.venis()
+        box8.venis()
         ball.bounce_y()
 
     if ball.distance(box9) < 50 and ball.ycor() > 150:
-        box.venis()
+        box9.venis()
         ball.bounce_y()
         
     if ball.distance(box10) < 50 and ball.ycor() > 150:
-        box.venis()
+        box10.venis()
         ball.bounce_y()
 
 
