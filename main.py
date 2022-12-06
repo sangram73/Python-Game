@@ -52,9 +52,49 @@ while flag:
     ball.movo()
     if ball.xcor() > 230 or ball.xcor() < -230:
         ball.bounce_y()
-        
+
     if ball.distance(paddle) < 50 and ball.ycor() > -220:
         ball.bounce_x()
-    
+        
+    if ball.distance(box) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+
+    if ball.distance(box2) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+
+    if ball.distance(box3) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+        
+    if ball.distance(box4) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+        
+    if ball.distance(box5) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+        
+    if ball.distance(box6) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+
+    if ball.distance(box7) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+        
+    if ball.distance(box8) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+
+    if ball.distance(box9) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+        
+    if ball.distance(box10) < 50 and ball.ycor() > 150:
+        box.venis()
+        ball.bounce_y()
+
 
 screen.exitonclick()
