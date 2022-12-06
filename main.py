@@ -50,7 +50,9 @@ while flag:
     time.sleep(0.1)
     screen.update()
     ball.movo()
-    
-
+    if ball.xcor() > 230 or ball.xcor() < -230:
+        ball.bounce_y()
+    if ball.xcor() > 230 or ball.xcor() < -230:
+        ball.bounce_y()
 
 screen.exitonclick()
