@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 import time
 from box import Box
+from padall import Paddle
 
 t = Turtle()
 
@@ -33,6 +34,9 @@ box7 = Box(position7)
 box8 = Box(position8)
 box9 = Box(position9)
 box10 = Box(position10)
+
+paddle = Paddle()
+
 
 flag = True
 # for screen get update in every faction of sec
