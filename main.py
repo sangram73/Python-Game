@@ -7,7 +7,7 @@ from scorebord import Score
 
 
 t = Turtle()
-life = 3
+life =3
 win = 0
 
 # position for box are placed
@@ -49,14 +49,18 @@ if paddle.xcor() < 230 or paddle.xcor() > -230:
     screen.onkey(paddle.Left, "Left")
 
 ball = Ball()
-flag = True
+FLAG = True
 # for screen get update in every faction of sec
-while flag:
+while FLAG:
+    if life == 0:
+        FLAG = False
+        score.game_over()
+        
+        
     time.sleep(0.1)
     screen.update()
     ball.movo()
-    if life == 0:
-        flag = False
+
     if ball.xcor() > 230 or ball.xcor() < -230:
         ball.bounce_y()
 
@@ -115,13 +119,14 @@ while flag:
 
     if ball.ycor() < -230:
         ball.reset()
+        life -= 1
         score.life_decrise()
-        
+
     if ball.ycor() > 200:
         ball.bounce_x()
-        
+
     if win == 10:
         score.win()
-        flag = False
+        FLAG = False
 
 screen.exitonclick()
